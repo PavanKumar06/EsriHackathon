@@ -1,0 +1,12 @@
+{
+    "Esri": {
+        "Fact1": "Esri is one of the oldest software companies. It is older than Microsoft, Apple, Oracle and even SAP!",
+        "Fact2": "Esri is a private company and the only two shareholders are the two founders — Jack and Laura Dangermond!",
+        "Fact3": "Some of the users of ESRI include: 30,000 cities and local governments, all 50 US states, and 12,000 universities!"
+    },
+    "Truist":{
+        "Fact1": "Truist Park features the largest canopy in baseball, three times bigger than most",
+        "Fact2": "The Atlanta Braves are the only existing MLB franchise to have played every season since professional baseball came into existence",
+        "Fact3": "Truist Park was originally named SunTrust Park when it opened in 2017. It officially changed names on January 14, 2020"
+    }
+}

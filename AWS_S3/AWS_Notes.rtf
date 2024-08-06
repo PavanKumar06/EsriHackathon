@@ -1,0 +1,107 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Hackathon Learning\
+Github has removed support for password authentication.\
+So if you clone a repository and you want write access, you have to Generate a PAT or Create a SSH.\
+\
+Using SSH\
+Generate a SSH Key -> ssh-keygen -t rsa -b 4096 -C \'93spavankumard@gmail.com" (just keep clicking next).\
+\
+Two files will be generate one with the public key and the other with the private key (these files are hidden).\
+Copy the .pub key (this is the public key), and goto your GitHub account settings and paste the SSH Key in the appropriate place.\
+\
+Now copy the SSH link to clone.\
+\
+You will be in the main branch.\
+Do ->\
+git clone \'93SSH Link\'94\
+cd into_Dir\
+git checkout -b feature/pavan\
+git push -u origin feature/pavan\
+git add .\
+git commit -m \'93Message\'94\
+git push\
+\
+To run the AWS SDK in your local -> (Amplify CLI and AWS CLI are not required)\
+I had installed AWS Amplify CLI (which is used by Mobile and Front-end devs, as it helps in setting up backend resources, managing the app lifecycle and generating code).\
+It is not required, to use the AWS SDK.\
+npm install -g @aws-amplify/cli\
+amplify \'97version\
+\
+I had also installed AWS CLI (which is a command line tool that provides an interface to interact with AWS services directly from the terminal. Useful for scripting and automating tasks via command-line)\
+It is not required, to use the AWS SDK.\
+You need to have python and pip installed in your PC.\
+pip install awscli\
+If it does not work, create a Virtual Environment\
+python3 -m venv awscli-env (create a virtual environment)\
+source awscli-env/bin/activate (activate it)\
+pip install awscli (install awscli in the virtual environment)\
+aws --version\
+aws configure (See below for detailed steps)\
+deactivate (deactivate it)\
+You can reactivate the virtual env -> source .venv/bin/activate\
+\
+Tip for installing packages in Python:\
+Let us take boto3 (it is the AWS SDK for Python. It allows Python developers to write software that makes use of services like Amazon S3, EC2, DynamoDB, Lambda, IAM, etc) as an example:\
+If you do -> pip install boto3, it is installed globally. Which means it is available for use in any project.\
+However, it\'92s not good practice to install it globally, as it may cause dependency conflicts. Therefore, it is better to create a virtual environment, and then install boto3 in that environment. This way the project\'92s dependencies are isolated\
+\
+On AWS first create a User in IAM -> \
+Give User Name -> Next -> \'85 -> Create\
+Select the User -> Add Permissions -> Attach policies directly -> AdministratorAccess -> Add Permission\
+Security Credentials -> Create access key -> Application running outside AWS (Use Case/I do not think it makes a difference, you can choose anything) -> Create access key -> Download .csv file\
+\
+In order to use boto3, you need to have Access keys.\
+When you create an IAM user, you can attach policies to the user (AdministratorAccess) and then create Access keys for the user.\
+If you use these Access keys to configure boto3, it will give you the level of access, as mentioned in the policies of the user.\
+\
+You can configure the Access keys using 2 ways -\
+Using AWS CLI\
+Open the terminal -\
+aws configure\
+AWS Access Key ID [None]: YOUR_ACCESS_KEY_ID\
+AWS Secret Access Key [None]: YOUR_SECRET_ACCESS_KEY\
+Default region name [None]: YOUR_REGION\
+Default output format [None]: json\
+\
+Using Python Code\
+import boto3\
+# Optionally configure credentials directly (not recommended for production)\
+boto3.setup_default_session(\
+    aws_access_key_id='YOUR_ACCESS_KEY_ID',\
+    aws_secret_access_key='YOUR_SECRET_ACCESS_KEY',\
+    region_name='YOUR_REGION'\
+)\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To check if you have correctly added your AWS credentials using 
+\fs26 aws configure
+\fs24 , you can look at the 
+\fs26 credentials
+\fs24  and 
+\fs26 config
+\fs24  files created by the AWS CLI (~/.aws/credentials).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

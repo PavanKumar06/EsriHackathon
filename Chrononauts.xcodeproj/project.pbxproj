@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11302B9D2C54917200821003 /* ChrononautsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302B9C2C54917200821003 /* ChrononautsApp.swift */; };
+		11302B9F2C54917200821003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302B9E2C54917200821003 /* ContentView.swift */; };
+		11302BA12C54917400821003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11302BA02C54917400821003 /* Assets.xcassets */; };
+		11302BA42C54917400821003 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11302BA32C54917400821003 /* Preview Assets.xcassets */; };
+		11302BAE2C54917400821003 /* ChrononautsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BAD2C54917400821003 /* ChrononautsTests.swift */; };
+		11302BB82C54917400821003 /* ChrononautsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BB72C54917400821003 /* ChrononautsUITests.swift */; };
+		11302BBA2C54917400821003 /* ChrononautsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BB92C54917400821003 /* ChrononautsUITestsLaunchTests.swift */; };
+		11302BCA2C5491B800821003 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BC92C5491B800821003 /* ImagePicker.swift */; };
+		11302BCC2C5491C000821003 /* UserPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BCB2C5491C000821003 /* UserPhoto.swift */; };
+		11302BCE2C5491CA00821003 /* Panorama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BCD2C5491CA00821003 /* Panorama.swift */; };
+		11302BD02C5491DB00821003 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BCF2C5491DB00821003 /* NavigationView.swift */; };
+		11302BD22C5491EB00821003 /* BridgeStreetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BD12C5491EB00821003 /* BridgeStreetView.swift */; };
+		11302BD42C54921600821003 /* AerialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BD32C54921600821003 /* AerialView.swift */; };
+		11302BD62C54923000821003 /* PanoramaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11302BD52C54923000821003 /* PanoramaViewModel.swift */; };
+		119957532C549656002A32A2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119957522C549656002A32A2 /* LocationManager.swift */; };
+		119957562C54A5AE002A32A2 /* ARStreetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119957552C54A5AE002A32A2 /* ARStreetView.swift */; };
+		119957582C54D09F002A32A2 /* HorizontalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119957572C54D09F002A32A2 /* HorizontalPickerView.swift */; };
+		119CCC2C2C56A69400F8CBCC /* FunFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119CCC2B2C56A69400F8CBCC /* FunFactsView.swift */; };
+		119CCC312C56C07B00F8CBCC /* ArcGIS in Frameworks */ = {isa = PBXBuildFile; productRef = 119CCC302C56C07B00F8CBCC /* ArcGIS */; };
+		11D12D8C2C560501002F42C5 /* UserPhotoARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D12D8B2C560501002F42C5 /* UserPhotoARView.swift */; };
+		11D12D902C5611A5002F42C5 /* ARUserPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D12D8F2C5611A5002F42C5 /* ARUserPhotoView.swift */; };
+		11D12D932C562A50002F42C5 /* PanoramicCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D12D922C562A50002F42C5 /* PanoramicCameraView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11302BAA2C54917400821003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11302B912C54917200821003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11302B982C54917200821003;
+			remoteInfo = Chrononauts;
+		};
+		11302BB42C54917400821003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11302B912C54917200821003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11302B982C54917200821003;
+			remoteInfo = Chrononauts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11302B992C54917200821003 /* Chrononauts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chrononauts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11302B9C2C54917200821003 /* ChrononautsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrononautsApp.swift; sourceTree = "<group>"; };
+		11302B9E2C54917200821003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11302BA02C54917400821003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11302BA32C54917400821003 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11302BA92C54917400821003 /* ChrononautsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChrononautsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11302BAD2C54917400821003 /* ChrononautsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrononautsTests.swift; sourceTree = "<group>"; };
+		11302BB32C54917400821003 /* ChrononautsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChrononautsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11302BB72C54917400821003 /* ChrononautsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrononautsUITests.swift; sourceTree = "<group>"; };
+		11302BB92C54917400821003 /* ChrononautsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrononautsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11302BC92C5491B800821003 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		11302BCB2C5491C000821003 /* UserPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhoto.swift; sourceTree = "<group>"; };
+		11302BCD2C5491CA00821003 /* Panorama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panorama.swift; sourceTree = "<group>"; };
+		11302BCF2C5491DB00821003 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		11302BD12C5491EB00821003 /* BridgeStreetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeStreetView.swift; sourceTree = "<group>"; };
+		11302BD32C54921600821003 /* AerialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerialView.swift; sourceTree = "<group>"; };
+		11302BD52C54923000821003 /* PanoramaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaViewModel.swift; sourceTree = "<group>"; };
+		119957522C549656002A32A2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		119957552C54A5AE002A32A2 /* ARStreetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARStreetView.swift; sourceTree = "<group>"; };
+		119957572C54D09F002A32A2 /* HorizontalPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerView.swift; sourceTree = "<group>"; };
+		119CCC2B2C56A69400F8CBCC /* FunFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsView.swift; sourceTree = "<group>"; };
+		11D12D8B2C560501002F42C5 /* UserPhotoARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoARView.swift; sourceTree = "<group>"; };
+		11D12D8F2C5611A5002F42C5 /* ARUserPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARUserPhotoView.swift; sourceTree = "<group>"; };
+		11D12D922C562A50002F42C5 /* PanoramicCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramicCameraView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11302B962C54917200821003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119CCC312C56C07B00F8CBCC /* ArcGIS in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11302BA62C54917400821003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11302BB02C54917400821003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11302B902C54917200821003 = {
+			isa = PBXGroup;
+			children = (
+				11302B9B2C54917200821003 /* Chrononauts */,
+				11302BAC2C54917400821003 /* ChrononautsTests */,
+				11302BB62C54917400821003 /* ChrononautsUITests */,
+				11302B9A2C54917200821003 /* Products */,
+				1199574F2C549386002A32A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11302B9A2C54917200821003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11302B992C54917200821003 /* Chrononauts.app */,
+				11302BA92C54917400821003 /* ChrononautsTests.xctest */,
+				11302BB32C54917400821003 /* ChrononautsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11302B9B2C54917200821003 /* Chrononauts */ = {
+			isa = PBXGroup;
+			children = (
+				11302BC82C54919100821003 /* Model */,
+				11302BC72C54918A00821003 /* View */,
+				11302BC62C54918200821003 /* ViewModel */,
+				11302B9C2C54917200821003 /* ChrononautsApp.swift */,
+				11302B9E2C54917200821003 /* ContentView.swift */,
+				11302BA02C54917400821003 /* Assets.xcassets */,
+				11302BA22C54917400821003 /* Preview Content */,
+			);
+			path = Chrononauts;
+			sourceTree = "<group>";
+		};
+		11302BA22C54917400821003 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				11302BA32C54917400821003 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11302BAC2C54917400821003 /* ChrononautsTests */ = {
+			isa = PBXGroup;
+			children = (
+				11302BAD2C54917400821003 /* ChrononautsTests.swift */,
+			);
+			path = ChrononautsTests;
+			sourceTree = "<group>";
+		};
+		11302BB62C54917400821003 /* ChrononautsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11302BB72C54917400821003 /* ChrononautsUITests.swift */,
+				11302BB92C54917400821003 /* ChrononautsUITestsLaunchTests.swift */,
+			);
+			path = ChrononautsUITests;
+			sourceTree = "<group>";
+		};
+		11302BC62C54918200821003 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11302BD52C54923000821003 /* PanoramaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11302BC72C54918A00821003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				119CCC2A2C56A68000F8CBCC /* FunFacts */,
+				11D12D912C562A27002F42C5 /* PanoramicCamera */,
+				11D12D8A2C5604DB002F42C5 /* UserStreetView */,
+				119957542C54A581002A32A2 /* StreetView */,
+				11302BCF2C5491DB00821003 /* NavigationView.swift */,
+				11302BD32C54921600821003 /* AerialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11302BC82C54919100821003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11302BC92C5491B800821003 /* ImagePicker.swift */,
+				11302BCB2C5491C000821003 /* UserPhoto.swift */,
+				11302BCD2C5491CA00821003 /* Panorama.swift */,
+				119957522C549656002A32A2 /* LocationManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1199574F2C549386002A32A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		119957542C54A581002A32A2 /* StreetView */ = {
+			isa = PBXGroup;
+			children = (
+				11302BD12C5491EB00821003 /* BridgeStreetView.swift */,
+				119957552C54A5AE002A32A2 /* ARStreetView.swift */,
+				119957572C54D09F002A32A2 /* HorizontalPickerView.swift */,
+			);
+			path = StreetView;
+			sourceTree = "<group>";
+		};
+		119CCC2A2C56A68000F8CBCC /* FunFacts */ = {
+			isa = PBXGroup;
+			children = (
+				119CCC2B2C56A69400F8CBCC /* FunFactsView.swift */,
+			);
+			path = FunFacts;
+			sourceTree = "<group>";
+		};
+		11D12D8A2C5604DB002F42C5 /* UserStreetView */ = {
+			isa = PBXGroup;
+			children = (
+				11D12D8B2C560501002F42C5 /* UserPhotoARView.swift */,
+				11D12D8F2C5611A5002F42C5 /* ARUserPhotoView.swift */,
+			);
+			path = UserStreetView;
+			sourceTree = "<group>";
+		};
+		11D12D912C562A27002F42C5 /* PanoramicCamera */ = {
+			isa = PBXGroup;
+			children = (
+				11D12D922C562A50002F42C5 /* PanoramicCameraView.swift */,
+			);
+			path = PanoramicCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11302B982C54917200821003 /* Chrononauts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11302BBD2C54917400821003 /* Build configuration list for PBXNativeTarget "Chrononauts" */;
+			buildPhases = (
+				11302B952C54917200821003 /* Sources */,
+				11302B962C54917200821003 /* Frameworks */,
+				11302B972C54917200821003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chrononauts;
+			packageProductDependencies = (
+				119CCC302C56C07B00F8CBCC /* ArcGIS */,
+			);
+			productName = Chrononauts;
+			productReference = 11302B992C54917200821003 /* Chrononauts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11302BA82C54917400821003 /* ChrononautsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11302BC02C54917400821003 /* Build configuration list for PBXNativeTarget "ChrononautsTests" */;
+			buildPhases = (
+				11302BA52C54917400821003 /* Sources */,
+				11302BA62C54917400821003 /* Frameworks */,
+				11302BA72C54917400821003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11302BAB2C54917400821003 /* PBXTargetDependency */,
+			);
+			name = ChrononautsTests;
+			productName = ChrononautsTests;
+			productReference = 11302BA92C54917400821003 /* ChrononautsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11302BB22C54917400821003 /* ChrononautsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11302BC32C54917400821003 /* Build configuration list for PBXNativeTarget "ChrononautsUITests" */;
+			buildPhases = (
+				11302BAF2C54917400821003 /* Sources */,
+				11302BB02C54917400821003 /* Frameworks */,
+				11302BB12C54917400821003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11302BB52C54917400821003 /* PBXTargetDependency */,
+			);
+			name = ChrononautsUITests;
+			productName = ChrononautsUITests;
+			productReference = 11302BB32C54917400821003 /* ChrononautsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11302B912C54917200821003 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					11302B982C54917200821003 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					11302BA82C54917400821003 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 11302B982C54917200821003;
+					};
+					11302BB22C54917400821003 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 11302B982C54917200821003;
+					};
+				};
+			};
+			buildConfigurationList = 11302B942C54917200821003 /* Build configuration list for PBXProject "Chrononauts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11302B902C54917200821003;
+			packageReferences = (
+				1199574E2C549379002A32A2 /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift" */,
+			);
+			productRefGroup = 11302B9A2C54917200821003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11302B982C54917200821003 /* Chrononauts */,
+				11302BA82C54917400821003 /* ChrononautsTests */,
+				11302BB22C54917400821003 /* ChrononautsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11302B972C54917200821003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11302BA42C54917400821003 /* Preview Assets.xcassets in Resources */,
+				11302BA12C54917400821003 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11302BA72C54917400821003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11302BB12C54917400821003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11302B952C54917200821003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D12D902C5611A5002F42C5 /* ARUserPhotoView.swift in Sources */,
+				119957582C54D09F002A32A2 /* HorizontalPickerView.swift in Sources */,
+				119CCC2C2C56A69400F8CBCC /* FunFactsView.swift in Sources */,
+				11302BCC2C5491C000821003 /* UserPhoto.swift in Sources */,
+				11302BCA2C5491B800821003 /* ImagePicker.swift in Sources */,
+				119957532C549656002A32A2 /* LocationManager.swift in Sources */,
+				11302B9F2C54917200821003 /* ContentView.swift in Sources */,
+				11302BD22C5491EB00821003 /* BridgeStreetView.swift in Sources */,
+				11302BD62C54923000821003 /* PanoramaViewModel.swift in Sources */,
+				11302BD42C54921600821003 /* AerialView.swift in Sources */,
+				11302BCE2C5491CA00821003 /* Panorama.swift in Sources */,
+				11302BD02C5491DB00821003 /* NavigationView.swift in Sources */,
+				11D12D932C562A50002F42C5 /* PanoramicCameraView.swift in Sources */,
+				11302B9D2C54917200821003 /* ChrononautsApp.swift in Sources */,
+				119957562C54A5AE002A32A2 /* ARStreetView.swift in Sources */,
+				11D12D8C2C560501002F42C5 /* UserPhotoARView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11302BA52C54917400821003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11302BAE2C54917400821003 /* ChrononautsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11302BAF2C54917400821003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11302BB82C54917400821003 /* ChrononautsUITests.swift in Sources */,
+				11302BBA2C54917400821003 /* ChrononautsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11302BAB2C54917400821003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11302B982C54917200821003 /* Chrononauts */;
+			targetProxy = 11302BAA2C54917400821003 /* PBXContainerItemProxy */;
+		};
+		11302BB52C54917400821003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11302B982C54917200821003 /* Chrononauts */;
+			targetProxy = 11302BB42C54917400821003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11302BBB2C54917400821003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11302BBC2C54917400821003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11302BBE2C54917400821003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chrononauts/Preview Content\"";
+				DEVELOPMENT_TEAM = GVW6U4MF4M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for augmented reality.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to track your routes even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to detect nearby buildings";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hackathon.Chrononauts.Shav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11302BBF2C54917400821003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chrononauts/Preview Content\"";
+				DEVELOPMENT_TEAM = GVW6U4MF4M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for augmented reality.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to track your routes even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to detect nearby buildings";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hackathon.Chrononauts.Shav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11302BC12C54917400821003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hackathon.ChrononautsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chrononauts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chrononauts";
+			};
+			name = Debug;
+		};
+		11302BC22C54917400821003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hackathon.ChrononautsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chrononauts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chrononauts";
+			};
+			name = Release;
+		};
+		11302BC42C54917400821003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hackathon.ChrononautsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chrononauts;
+			};
+			name = Debug;
+		};
+		11302BC52C54917400821003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hackathon.ChrononautsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chrononauts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11302B942C54917200821003 /* Build configuration list for PBXProject "Chrononauts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11302BBB2C54917400821003 /* Debug */,
+				11302BBC2C54917400821003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11302BBD2C54917400821003 /* Build configuration list for PBXNativeTarget "Chrononauts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11302BBE2C54917400821003 /* Debug */,
+				11302BBF2C54917400821003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11302BC02C54917400821003 /* Build configuration list for PBXNativeTarget "ChrononautsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11302BC12C54917400821003 /* Debug */,
+				11302BC22C54917400821003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11302BC32C54917400821003 /* Build configuration list for PBXNativeTarget "ChrononautsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11302BC42C54917400821003 /* Debug */,
+				11302BC52C54917400821003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1199574E2C549379002A32A2 /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Esri/arcgis-maps-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 200.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		119CCC302C56C07B00F8CBCC /* ArcGIS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1199574E2C549379002A32A2 /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift" */;
+			productName = ArcGIS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 11302B912C54917200821003 /* Project object */;
+}
